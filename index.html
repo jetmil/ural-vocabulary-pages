@@ -288,6 +288,15 @@
             box-shadow: 0 2px 8px rgba(45, 106, 79, 0.2);
         }
 
+        /* BILINGUAL TEXT */
+        .en-text {
+            font-style: italic;
+            color: var(--secondary);
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+            opacity: 0.85;
+        }
+
         /* TABLE SECTION */
         .table-section {
             padding: 120px 0;
@@ -428,9 +437,11 @@
     <section class="hero">
         <div class="hero-container">
             <h1><strong>Региональная лексика</strong><br>Свердловской области</h1>
+            <p class="en-text">Regional Vocabulary of Sverdlovsk Oblast</p>
             <p class="hero-subtitle">
                 Живые слова Урала: от промышленных цехов до сказов Бажова
             </p>
+            <p class="en-text">Living Words of the Urals: From Industrial Workshops to Bazhov's Tales</p>
             <div class="divider"></div>
         </div>
     </section>
@@ -440,15 +451,25 @@
         <div class="container">
             <div class="intro-content">
                 <h2>Язык, рождённый Уралом</h2>
+                <p class="en-text">A Language Born from the Urals</p>
                 <div class="divider"></div>
                 <p>
                     На стыке Европы и Азии, среди величественных гор и бескрайних лесов,
                     формировался особый диалект — отражение трудолюбия, мастерства и богатой
                     культуры уральского народа.
                 </p>
+                <p class="en-text">
+                    At the crossroads of Europe and Asia, among majestic mountains and endless forests,
+                    a unique dialect emerged — reflecting the hard work, craftsmanship and rich culture
+                    of the Ural people.
+                </p>
                 <p>
                     Каждое слово несёт в себе историю: от древних финно-угорских племён
                     до современных индустриальных центров.
+                </p>
+                <p class="en-text">
+                    Each word carries history: from ancient Finno-Ugric tribes
+                    to modern industrial centers.
                 </p>
             </div>
         </div>
@@ -460,128 +481,175 @@
 
             <!-- WORD 1: ШАНЬГА -->
             <div class="word-grid">
-                <div class="word-image" data-instruction="ФОТО: Золотистые шаньги на деревянном столе, русская печь на фоне, тёплый свет, уютная атмосфера. Стиль: food photography, естественное освещение.">
-                    <!-- Вставьте сюда <img src="shanga.jpg" alt="Шаньга"> -->
+                <div class="word-image">
+                    <img src="images/shanga.jpg" alt="Шаньга">
                 </div>
                 <div class="word-content">
-                    <div class="word-number">01 / Кулинария</div>
+                    <div class="word-number">01 / Кулинария · Cuisine</div>
                     <h3 class="word-title">Шаньга</h3>
                     <p class="word-pronunciation">Shanga [ˈʃaŋɡə]</p>
                     <p class="word-meaning">
                         Традиционная уральская выпечка — открытая лепёшка, запечённая с золотистой сметаной.
                         Непременный атрибут чаепития в каждой уральской семье.
                     </p>
-                    <p><em>English:</em> Traditional Ural flatbread baked with sour cream topping.</p>
+                    <p class="en-text">
+                        Traditional Ural flatbread — an open pastry baked with golden sour cream topping.
+                        An essential element of tea time in every Ural family.
+                    </p>
                     <div class="word-etymology">
                         <strong>Этимология:</strong> Исконно уральское слово, известное с XVIII века.
                         Шаньги пекли в русских печах, передавая рецепт из поколения в поколение.
+                        <p class="en-text">
+                            <strong>Etymology:</strong> Authentic Ural word known since the 18th century.
+                            Shangas were baked in Russian ovens, recipes passed down through generations.
+                        </p>
                     </div>
-                    <span class="category-label">Кухня Урала</span>
+                    <span class="category-label">Кухня Урала · Ural Cuisine</span>
                 </div>
             </div>
 
             <!-- WORD 2: ВЕКША -->
             <div class="word-grid reverse">
-                <div class="word-image" data-instruction="ФОТО: Рыжая белка на ветке сосны, уральская тайга, заснеженные горы вдали, зимнее солнце. Стиль: wildlife photography, National Geographic.">
+                <div class="word-image">
+                    <img src="images/veksha.jpg" alt="Векша">
                 </div>
                 <div class="word-content">
-                    <div class="word-number">02 / Природа</div>
+                    <div class="word-number">02 / Природа · Nature</div>
                     <h3 class="word-title">Векша</h3>
                     <p class="word-pronunciation">Veksha [ˈvʲekʃə]</p>
                     <p class="word-meaning">
                         Белка обыкновенная. Древнее название, сохранившееся на Урале и Русском Севере.
                         Также — мелкая денежная единица Древней Руси IX-XIII веков.
                     </p>
-                    <p><em>English:</em> Red squirrel; also an ancient monetary unit in Rus'.</p>
+                    <p class="en-text">
+                        Red squirrel. An ancient name preserved in the Urals and Russian North.
+                        Also a small monetary unit in Ancient Rus' (9th-13th centuries).
+                    </p>
                     <div class="word-etymology">
                         <strong>Этимология:</strong> Связано с финно-угорскими языками.
                         Беличьи шкурки использовались как деньги — отсюда название монеты.
+                        <p class="en-text">
+                            <strong>Etymology:</strong> Related to Finno-Ugric languages.
+                            Squirrel pelts were used as currency — hence the coin's name.
+                        </p>
                     </div>
-                    <span class="category-label">Фауна</span>
+                    <span class="category-label">Фауна · Wildlife</span>
                 </div>
             </div>
 
             <!-- WORD 3: БАСКОЙ -->
             <div class="word-grid">
-                <div class="word-image" data-instruction="ФОТО: Девушка в традиционном русском сарафане с уральскими узорами, на фоне уральских гор, полевые цветы, золотой час. Стиль: портретная фотография, естественный свет.">
+                <div class="word-image">
+                    <img src="images/baskoj.jpg" alt="Баской">
                 </div>
                 <div class="word-content">
-                    <div class="word-number">03 / Речь</div>
+                    <div class="word-number">03 / Речь · Speech</div>
                     <h3 class="word-title">Баской</h3>
                     <p class="word-pronunciation">Baskoy [basˈkoj]</p>
                     <p class="word-meaning">
                         Красивый, пригожий, нарядный. Уральцы так называют всё, что радует глаз
                         и греет душу.
                     </p>
-                    <p><em>English:</em> Beautiful, handsome, elegant — the Ural compliment.</p>
+                    <p class="en-text">
+                        Beautiful, handsome, elegant. How Ural people describe everything
+                        that pleases the eye and warms the soul.
+                    </p>
                     <div class="word-etymology">
                         <strong>Пример:</strong> "Ладна девка-то растёт, баскуща выдет!"
                         Слово вошло в топ-10 популярных уральских диалектизмов в соцсетях.
+                        <p class="en-text">
+                            <strong>Example:</strong> "The girl is growing up nicely, she'll turn out beautiful!"
+                            The word entered top 10 popular Ural dialectisms on social media.
+                        </p>
                     </div>
-                    <span class="category-label">Диалект</span>
+                    <span class="category-label">Диалект · Dialect</span>
                 </div>
             </div>
 
             <!-- WORD 4: ПОСИКУНЧИКИ -->
             <div class="word-grid reverse">
-                <div class="word-image" data-instruction="ФОТО: Жареные пирожки, горячий бульон капает, пар поднимается, деревянная доска, аппетитная подача. Стиль: food photography, макро.">
+                <div class="word-image">
+                    <img src="images/posikunchiki.jpg" alt="Посикунчики">
                 </div>
                 <div class="word-content">
-                    <div class="word-number">04 / Гастрономия</div>
+                    <div class="word-number">04 / Гастрономия · Gastronomy</div>
                     <h3 class="word-title">Посикунчики</h3>
                     <p class="word-pronunciation">Posikunchiki</p>
                     <p class="word-meaning">
                         Жареные пирожки с мясной начинкой и бульоном. При укусе "сикает" горячий сок —
                         отсюда название. Визитная карточка Пермского края.
                     </p>
-                    <p><em>English:</em> Fried meat pies that release hot broth when bitten.</p>
+                    <p class="en-text">
+                        Fried meat pies filled with broth. When bitten, hot juice "squirts" out —
+                        hence the name. The calling card of Perm Territory.
+                    </p>
                     <div class="word-etymology">
                         <strong>Традиция:</strong> Едят свежими со сковороды, обмакивая в соус "макало"
                         из горчицы и уксуса.
+                        <p class="en-text">
+                            <strong>Tradition:</strong> Eaten fresh from the pan, dipped in "makalo" sauce
+                            made from mustard and vinegar.
+                        </p>
                     </div>
-                    <span class="category-label">Кухня</span>
+                    <span class="category-label">Кухня · Cuisine</span>
                 </div>
             </div>
 
             <!-- WORD 5: ХРЕНОВИНА -->
             <div class="word-grid">
-                <div class="word-image" data-instruction="ФОТО: Красный соус в стеклянной банке, свежий хрен, чеснок, помидоры, деревенский натюрморт, зимнее окно. Стиль: rustic still life.">
+                <div class="word-image">
+                    <img src="images/khrenovіna.jpg" alt="Хреновина">
                 </div>
                 <div class="word-content">
-                    <div class="word-number">05 / Традиции</div>
+                    <div class="word-number">05 / Традиции · Traditions</div>
                     <h3 class="word-title">Хреновина</h3>
                     <p class="word-pronunciation">Khrenovіna</p>
                     <p class="word-meaning">
                         Острая приправа из помидоров, хрена и чеснока. Согревает в морозы
                         и придаёт вкус традиционным блюдам — пельменям, холодцу.
                     </p>
-                    <p><em>English:</em> Spicy sauce made from tomatoes, horseradish and garlic.</p>
+                    <p class="en-text">
+                        Spicy condiment made from tomatoes, horseradish and garlic. Warms you in freezing weather
+                        and adds flavor to traditional dishes — pelmeni, aspic.
+                    </p>
                     <div class="word-etymology">
                         <strong>История:</strong> Особенно популярна на Урале и в Сибири
                         благодаря согревающим свойствам хрена.
+                        <p class="en-text">
+                            <strong>History:</strong> Especially popular in the Urals and Siberia
+                            due to the warming properties of horseradish.
+                        </p>
                     </div>
-                    <span class="category-label">Приправы</span>
+                    <span class="category-label">Приправы · Condiments</span>
                 </div>
             </div>
 
             <!-- WORD 6: МАЛАХИТНИЦА -->
             <div class="word-grid reverse">
-                <div class="word-image" data-instruction="ФОТО: Пещера с кристаллами малахита, зелёное свечение, подземелье Урала, загадочная атмосфера. Стиль: cinematic, магический реализм.">
+                <div class="word-image">
+                    <img src="images/malakhitnitsa.jpg" alt="Малахитница">
                 </div>
                 <div class="word-content">
-                    <div class="word-number">06 / Фольклор</div>
+                    <div class="word-number">06 / Фольклор · Folklore</div>
                     <h3 class="word-title">Малахитница</h3>
                     <p class="word-pronunciation">Malakhitnitsa</p>
                     <p class="word-meaning">
                         Хозяйка Медной горы из сказов П.П. Бажова. Прекрасная девушка в платье
                         цвета малахита, хранительница подземных сокровищ Урала.
                     </p>
-                    <p><em>English:</em> The Mistress of the Copper Mountain from Bazhov's tales.</p>
+                    <p class="en-text">
+                        The Mistress of the Copper Mountain from P.P. Bazhov's tales. A beautiful maiden in a malachite dress,
+                        guardian of the Ural's underground treasures.
+                    </p>
                     <div class="word-etymology">
                         <strong>Легенда:</strong> Показывалась только достойным мастерам,
                         даря удачу в поиске самоцветов. Символ уральского фольклора.
+                        <p class="en-text">
+                            <strong>Legend:</strong> She appeared only to worthy craftsmen,
+                            granting luck in finding gemstones. A symbol of Ural folklore.
+                        </p>
                     </div>
-                    <span class="category-label">Мифология</span>
+                    <span class="category-label">Мифология · Mythology</span>
                 </div>
             </div>
 
@@ -593,10 +661,15 @@
         <div class="container">
             <div class="table-header">
                 <h2>Полный словарь</h2>
+                <p class="en-text">Complete Vocabulary</p>
                 <div class="divider"></div>
                 <p style="max-width: 700px; margin: 1rem auto; color: var(--secondary);">
                     Систематизированная таблица региональной лексики Свердловской области
                     с переводом на английский язык.
+                </p>
+                <p class="en-text" style="max-width: 700px; margin: 1rem auto;">
+                    Systematized table of Sverdlovsk Oblast regional vocabulary
+                    with English translations.
                 </p>
             </div>
 
@@ -604,9 +677,9 @@
                 <thead>
                     <tr>
                         <th>№</th>
-                        <th>Слово</th>
+                        <th>Слово / Word</th>
                         <th>Транскрипция</th>
-                        <th>Значение</th>
+                        <th>Значение (RU)</th>
                         <th>English Definition</th>
                     </tr>
                 </thead>
@@ -693,14 +766,20 @@
                 Всероссийский конкурс по региональной лексикографии<br>
                 «Мне всё родное в этом слове»
             </p>
+            <p class="en-text" style="opacity: 1;">
+                All-Russian Competition in Regional Lexicography<br>
+                "Everything Native to Me in This Word"
+            </p>
             <div class="divider" style="background: rgba(255,255,255,0.3);"></div>
             <p>Астраханский государственный университет им. В.Н. Татищева</p>
+            <p class="en-text" style="opacity: 1;">Astrakhan State University named after V.N. Tatishchev</p>
             <p>Свердловская область • 2025</p>
+            <p class="en-text" style="opacity: 1;">Sverdlovsk Oblast • 2025</p>
         </div>
     </footer>
 
     <!-- PRINT BUTTON -->
-    <button class="print-btn" onclick="window.print()">Печать в PDF</button>
+    <button class="print-btn" onclick="window.print()">Печать в PDF / Print to PDF</button>
 
 </body>
 </html>
