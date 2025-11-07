@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Региональная лексика Свердловской области</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* TILDA-INSPIRED MODERN DESIGN */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2C3E50;
+            --secondary: #34495E;
+            --accent: #8B7355;
+            --light: #F8F9FA;
+            --white: #FFFFFF;
+            --border: #E8E8E8;
+            --malachite-dark: #1B4332;
+            --malachite: #2D6A4F;
+            --malachite-light: #52B788;
+            --malachite-accent: #40916C;
+        }
+
+        body {
+            font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--primary);
+            background: var(--white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3 {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 2px;
+            background: linear-gradient(to right, var(--malachite), transparent);
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* HERO SECTION - TILDA STYLE */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.5)),
+                        url('hero-ural-mountains.jpg') center/cover no-repeat fixed;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .hero::before {
+            content: 'Замените на фото: Уральские горы, панорама, золотой час';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 0.5rem 1rem;
+            font-size: 0.8rem;
+            border-radius: 4px;
+            z-index: 10;
+        }
+
+        .hero-container {
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .hero h1 strong {
+            font-weight: 700;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            font-weight: 300;
+            margin-bottom: 3rem;
+            opacity: 0.95;
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, var(--malachite), var(--malachite-light));
+            margin: 3rem auto;
+            box-shadow: 0 0 10px rgba(45, 106, 79, 0.3);
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            padding: 120px 0;
+            position: relative;
+        }
+
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--malachite-light), transparent);
+        }
+
+        .section-dark {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .section-light {
+            background: var(--light);
+        }
+
+        /* WORD CARDS - CLEAN TILDA STYLE */
+        .word-block {
+            margin-bottom: 120px;
+        }
+
+        .word-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .word-grid.reverse {
+            direction: rtl;
+        }
+
+        .word-grid.reverse > * {
+            direction: ltr;
+        }
+
+        .word-image {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background: #f0f0f0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .word-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .word-image::after {
+            content: attr(data-instruction);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            text-align: center;
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 2rem;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            border-radius: 4px;
+        }
+
+        .word-content {
+            padding: 2rem;
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .word-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .word-number {
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--malachite);
+            margin-bottom: 1rem;
+        }
+
+        .word-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .word-pronunciation {
+            font-size: 1rem;
+            font-weight: 300;
+            color: var(--secondary);
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .word-meaning {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .word-etymology {
+            font-size: 1rem;
+            color: var(--secondary);
+            padding: 1.5rem;
+            background: rgba(45, 106, 79, 0.05);
+            border-left: 3px solid var(--malachite);
+            margin-top: 2rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .word-etymology strong {
+            color: var(--malachite-dark);
+        }
+
+        .category-label {
+            display: inline-block;
+            padding: 0.5rem 1.2rem;
+            background: linear-gradient(135deg, var(--malachite-dark), var(--malachite));
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-top: 1.5rem;
+            box-shadow: 0 2px 8px rgba(45, 106, 79, 0.2);
+        }
+
+        /* TABLE SECTION */
+        .table-section {
+            padding: 120px 0;
+            background: var(--white);
+        }
+
+        .table-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .vocabulary-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 3rem;
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+        }
+
+        .vocabulary-table thead {
+            background: linear-gradient(135deg, var(--malachite-dark), var(--malachite));
+            color: white;
+        }
+
+        .vocabulary-table th {
+            padding: 1.5rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .vocabulary-table td {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.95rem;
+        }
+
+        .vocabulary-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .vocabulary-table tr:hover {
+            background: var(--light);
+        }
+
+        .table-word {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--malachite);
+        }
+
+        /* FOOTER */
+        .footer {
+            background: var(--primary);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            margin: 0.5rem 0;
+        }
+
+        /* PRINT BUTTON */
+        .print-btn {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background: linear-gradient(135deg, var(--malachite), var(--malachite-light));
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .print-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(45, 106, 79, 0.4);
+            background: linear-gradient(135deg, var(--malachite-dark), var(--malachite));
+        }
+
+        /* PRINT STYLES */
+        @media print {
+            .print-btn { display: none; }
+            .hero::before, .word-image::after { display: none; }
+            .word-block { page-break-inside: avoid; }
+            @page { margin: 2cm; }
+            body { font-size: 12pt; }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 2rem; }
+            .word-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .word-grid.reverse { direction: ltr; }
+            .section { padding: 80px 0; }
+            .word-image { height: 350px; }
+        }
+
+        /* INTRO SECTION */
+        .intro-section {
+            padding: 120px 0;
+            background: var(--white);
+            text-align: center;
+        }
+
+        .intro-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .intro-content p {
+            font-size: 1.2rem;
+            line-height: 2;
+            margin-bottom: 2rem;
+            color: var(--secondary);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1><strong>Региональная лексика</strong><br>Свердловской области</h1>
+            <p class="hero-subtitle">
+                Живые слова Урала: от промышленных цехов до сказов Бажова
+            </p>
+            <div class="divider"></div>
+        </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <h2>Язык, рождённый Уралом</h2>
+                <div class="divider"></div>
+                <p>
+                    На стыке Европы и Азии, среди величественных гор и бескрайних лесов,
+                    формировался особый диалект — отражение трудолюбия, мастерства и богатой
+                    культуры уральского народа.
+                </p>
+                <p>
+                    Каждое слово несёт в себе историю: от древних финно-угорских племён
+                    до современных индустриальных центров.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORDS SECTION -->
+    <div class="word-block">
+        <div class="container">
+
+            <!-- WORD 1: ШАНЬГА -->
+            <div class="word-grid">
+                <div class="word-image" data-instruction="ФОТО: Золотистые шаньги на деревянном столе, русская печь на фоне, тёплый свет, уютная атмосфера. Стиль: food photography, естественное освещение.">
+                    <!-- Вставьте сюда <img src="shanga.jpg" alt="Шаньга"> -->
+                </div>
+                <div class="word-content">
+                    <div class="word-number">01 / Кулинария</div>
+                    <h3 class="word-title">Шаньга</h3>
+                    <p class="word-pronunciation">Shanga [ˈʃaŋɡə]</p>
+                    <p class="word-meaning">
+                        Традиционная уральская выпечка — открытая лепёшка, запечённая с золотистой сметаной.
+                        Непременный атрибут чаепития в каждой уральской семье.
+                    </p>
+                    <p><em>English:</em> Traditional Ural flatbread baked with sour cream topping.</p>
+                    <div class="word-etymology">
+                        <strong>Этимология:</strong> Исконно уральское слово, известное с XVIII века.
+                        Шаньги пекли в русских печах, передавая рецепт из поколения в поколение.
+                    </div>
+                    <span class="category-label">Кухня Урала</span>
+                </div>
+            </div>
+
+            <!-- WORD 2: ВЕКША -->
+            <div class="word-grid reverse">
+                <div class="word-image" data-instruction="ФОТО: Рыжая белка на ветке сосны, уральская тайга, заснеженные горы вдали, зимнее солнце. Стиль: wildlife photography, National Geographic.">
+                </div>
+                <div class="word-content">
+                    <div class="word-number">02 / Природа</div>
+                    <h3 class="word-title">Векша</h3>
+                    <p class="word-pronunciation">Veksha [ˈvʲekʃə]</p>
+                    <p class="word-meaning">
+                        Белка обыкновенная. Древнее название, сохранившееся на Урале и Русском Севере.
+                        Также — мелкая денежная единица Древней Руси IX-XIII веков.
+                    </p>
+                    <p><em>English:</em> Red squirrel; also an ancient monetary unit in Rus'.</p>
+                    <div class="word-etymology">
+                        <strong>Этимология:</strong> Связано с финно-угорскими языками.
+                        Беличьи шкурки использовались как деньги — отсюда название монеты.
+                    </div>
+                    <span class="category-label">Фауна</span>
+                </div>
+            </div>
+
+            <!-- WORD 3: БАСКОЙ -->
+            <div class="word-grid">
+                <div class="word-image" data-instruction="ФОТО: Девушка в традиционном русском сарафане с уральскими узорами, на фоне уральских гор, полевые цветы, золотой час. Стиль: портретная фотография, естественный свет.">
+                </div>
+                <div class="word-content">
+                    <div class="word-number">03 / Речь</div>
+                    <h3 class="word-title">Баской</h3>
+                    <p class="word-pronunciation">Baskoy [basˈkoj]</p>
+                    <p class="word-meaning">
+                        Красивый, пригожий, нарядный. Уральцы так называют всё, что радует глаз
+                        и греет душу.
+                    </p>
+                    <p><em>English:</em> Beautiful, handsome, elegant — the Ural compliment.</p>
+                    <div class="word-etymology">
+                        <strong>Пример:</strong> "Ладна девка-то растёт, баскуща выдет!"
+                        Слово вошло в топ-10 популярных уральских диалектизмов в соцсетях.
+                    </div>
+                    <span class="category-label">Диалект</span>
+                </div>
+            </div>
+
+            <!-- WORD 4: ПОСИКУНЧИКИ -->
+            <div class="word-grid reverse">
+                <div class="word-image" data-instruction="ФОТО: Жареные пирожки, горячий бульон капает, пар поднимается, деревянная доска, аппетитная подача. Стиль: food photography, макро.">
+                </div>
+                <div class="word-content">
+                    <div class="word-number">04 / Гастрономия</div>
+                    <h3 class="word-title">Посикунчики</h3>
+                    <p class="word-pronunciation">Posikunchiki</p>
+                    <p class="word-meaning">
+                        Жареные пирожки с мясной начинкой и бульоном. При укусе "сикает" горячий сок —
+                        отсюда название. Визитная карточка Пермского края.
+                    </p>
+                    <p><em>English:</em> Fried meat pies that release hot broth when bitten.</p>
+                    <div class="word-etymology">
+                        <strong>Традиция:</strong> Едят свежими со сковороды, обмакивая в соус "макало"
+                        из горчицы и уксуса.
+                    </div>
+                    <span class="category-label">Кухня</span>
+                </div>
+            </div>
+
+            <!-- WORD 5: ХРЕНОВИНА -->
+            <div class="word-grid">
+                <div class="word-image" data-instruction="ФОТО: Красный соус в стеклянной банке, свежий хрен, чеснок, помидоры, деревенский натюрморт, зимнее окно. Стиль: rustic still life.">
+                </div>
+                <div class="word-content">
+                    <div class="word-number">05 / Традиции</div>
+                    <h3 class="word-title">Хреновина</h3>
+                    <p class="word-pronunciation">Khrenovіna</p>
+                    <p class="word-meaning">
+                        Острая приправа из помидоров, хрена и чеснока. Согревает в морозы
+                        и придаёт вкус традиционным блюдам — пельменям, холодцу.
+                    </p>
+                    <p><em>English:</em> Spicy sauce made from tomatoes, horseradish and garlic.</p>
+                    <div class="word-etymology">
+                        <strong>История:</strong> Особенно популярна на Урале и в Сибири
+                        благодаря согревающим свойствам хрена.
+                    </div>
+                    <span class="category-label">Приправы</span>
+                </div>
+            </div>
+
+            <!-- WORD 6: МАЛАХИТНИЦА -->
+            <div class="word-grid reverse">
+                <div class="word-image" data-instruction="ФОТО: Пещера с кристаллами малахита, зелёное свечение, подземелье Урала, загадочная атмосфера. Стиль: cinematic, магический реализм.">
+                </div>
+                <div class="word-content">
+                    <div class="word-number">06 / Фольклор</div>
+                    <h3 class="word-title">Малахитница</h3>
+                    <p class="word-pronunciation">Malakhitnitsa</p>
+                    <p class="word-meaning">
+                        Хозяйка Медной горы из сказов П.П. Бажова. Прекрасная девушка в платье
+                        цвета малахита, хранительница подземных сокровищ Урала.
+                    </p>
+                    <p><em>English:</em> The Mistress of the Copper Mountain from Bazhov's tales.</p>
+                    <div class="word-etymology">
+                        <strong>Легенда:</strong> Показывалась только достойным мастерам,
+                        даря удачу в поиске самоцветов. Символ уральского фольклора.
+                    </div>
+                    <span class="category-label">Мифология</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- TABLE SECTION -->
+    <section class="table-section">
+        <div class="container">
+            <div class="table-header">
+                <h2>Полный словарь</h2>
+                <div class="divider"></div>
+                <p style="max-width: 700px; margin: 1rem auto; color: var(--secondary);">
+                    Систематизированная таблица региональной лексики Свердловской области
+                    с переводом на английский язык.
+                </p>
+            </div>
+
+            <table class="vocabulary-table">
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Слово</th>
+                        <th>Транскрипция</th>
+                        <th>Значение</th>
+                        <th>English Definition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="table-word">Шаньга</td>
+                        <td>Shanga [ˈʃaŋɡə]</td>
+                        <td>Открытая лепёшка со сметаной</td>
+                        <td>Flatbread with sour cream</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="table-word">Векша</td>
+                        <td>Veksha [ˈvʲekʃə]</td>
+                        <td>Белка; древняя монета</td>
+                        <td>Squirrel; ancient coin</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="table-word">Баской</td>
+                        <td>Baskoy [basˈkoj]</td>
+                        <td>Красивый, пригожий</td>
+                        <td>Beautiful, handsome</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="table-word">Посикунчики</td>
+                        <td>Posikunchiki</td>
+                        <td>Жареные пирожки с бульоном</td>
+                        <td>Fried pies with broth</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="table-word">Хреновина</td>
+                        <td>Khrenovіna</td>
+                        <td>Острая приправа из хрена</td>
+                        <td>Spicy horseradish sauce</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="table-word">Малахитница</td>
+                        <td>Malakhitnitsa</td>
+                        <td>Хозяйка Медной горы</td>
+                        <td>Mistress of Copper Mountain</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="table-word">Груздянка</td>
+                        <td>Gruzdyanka</td>
+                        <td>Грибной суп из груздей</td>
+                        <td>Mushroom soup from milk caps</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="table-word">Калья</td>
+                        <td>Kalya</td>
+                        <td>Рыбный суп с огурцами</td>
+                        <td>Fish soup with pickles</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="table-word">Пимы</td>
+                        <td>Pimy [ˈpʲimɨ]</td>
+                        <td>Валенки, войлочные сапоги</td>
+                        <td>Felt boots</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="table-word">Рифейские горы</td>
+                        <td>Riphean Mountains</td>
+                        <td>Древнее название Урала</td>
+                        <td>Ancient name for Ural Mts.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                Всероссийский конкурс по региональной лексикографии<br>
+                «Мне всё родное в этом слове»
+            </p>
+            <div class="divider" style="background: rgba(255,255,255,0.3);"></div>
+            <p>Астраханский государственный университет им. В.Н. Татищева</p>
+            <p>Свердловская область • 2025</p>
+        </div>
+    </footer>
+
+    <!-- PRINT BUTTON -->
+    <button class="print-btn" onclick="window.print()">Печать в PDF</button>
+
+</body>
+</html>
