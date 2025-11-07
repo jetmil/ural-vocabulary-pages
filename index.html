@@ -84,25 +84,12 @@
             align-items: center;
             justify-content: center;
             background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.5)),
-                        url('hero-ural-mountains.jpg') center/cover no-repeat fixed;
+                        url('images/hero-ural-mountains.jpg') center/cover no-repeat fixed;
             color: var(--white);
             text-align: center;
         }
 
-        .hero::before {
-            content: 'Замените на фото: Уральские горы, панорама, золотой час';
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background: rgba(0,0,0,0.7);
-            color: white;
-            padding: 0.5rem 1rem;
-            font-size: 0.8rem;
-            border-radius: 4px;
-            z-index: 10;
-        }
-
-        .hero-container {
+.hero-container {
             max-width: 800px;
             padding: 2rem;
         }
@@ -376,7 +363,7 @@
         /* PRINT STYLES */
         @media print {
             .print-btn { display: none; }
-            .hero::before, .word-image::after { display: none; }
+            .word-image::after { display: none; }
             .word-block { page-break-inside: avoid; }
             @page { margin: 2cm; }
             body { font-size: 12pt; }
